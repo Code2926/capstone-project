@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Gallery Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+<header>
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Site Logo" class="logo">
+        </a>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('grid_gallery') }}">Grid Gallery</a></li>
+                <li><a href="{{ url_for('flex_gallery') }}">Flex Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<main id="main-content">
+    <h1>Interactive Flex Gallery</h1>
+    <p>Images displayed using a modern flex layout with hover effects and alternating shapes for visual appeal.</p>
+
+    <div class="flex-container">
+        <img src="https://picsum.photos/400/250?random=11" alt="Image 11">
+        <img src="https://picsum.photos/400/250?random=12" alt="Image 12">
+        <img src="https://picsum.photos/400/250?random=13" alt="Image 13">
+        <img src="https://picsum.photos/400/250?random=14" alt="Image 14">
+        <img src="https://picsum.photos/400/250?random=15" alt="Image 15">
+        <img src="https://picsum.photos/400/250?random=16" alt="Image 16">
+        <img src="https://picsum.photos/400/250?random=17" alt="Image 17">
+        <img src="https://picsum.photos/400/250?random=18" alt="Image 18">
+        <img src="https://picsum.photos/400/250?random=18" alt="Image 19">
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Muhammad Azan Ahmad</p>
+</footer>
+
+</body>
+</html>

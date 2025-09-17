@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Gallery Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+<header>
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Site Logo" class="logo">
+        </a>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('grid_gallery') }}">Grid Gallery</a></li>
+                <li><a href="{{ url_for('flex_gallery') }}">Flex Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main id="main-content">
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Responsive Gallery</h1>
+            <p>Explore beautiful images in modern layouts with interactive effects. Designed to showcase images elegantly on all screen sizes.</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <h2>Our Mission</h2>
+        <p>We bring high-quality, curated images to your screen using the latest web standards. Hover over images to see subtle animations and enjoy a smooth browsing experience.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Muhammad Azan Ahmad</p>
+</footer>
+
+</body>
+</html>
